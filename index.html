@@ -1,0 +1,55 @@
+<div class="j-module" module-function="tabAutoLayout" module-param="{}">
+    <div class="jTitle">
+      
+        <div class="jTitleSort">
+            <div class="jSortTabArrow"><b></b></div>
+            <div class="jSortTab">
+                #foreach($categoryRec in $categoryRecList) 
+                    <span>$!categoryRec.categoryName</span>
+                #end
+            </div>
+        </div>
+    </div>
+    <div class="jSortContent">
+        <div class="jSortContentArea">
+            #foreach($categoryRec in $categoryRecList)
+            <ul>
+                #foreach($goods in $categoryRec.goodsList)
+                <li>
+                    <div class="jItem">
+                        <div class="jPic">
+                            <a href="$!jshopProduct.getBookUrl($!goods.goodsId)" target="_blank">
+                                <img src="$!jshopCommon.getImage($!goods.imageurl,2)" alt="$!goods.wname" height="160" width="160" />
+                            </a>
+                            #if( $!goods.promTag!="")
+                            <div class="jPromotionLabel">
+                                <div class="jPromotionTextArea">
+                                    <span class="jPromotionNum">$!goods.promTag</span>
+                                </div>
+                            </div>
+                            #end
+                        </div>
+                        <div class="jGoodsInfo">
+                            <div class="jDesc" title="$!goods.wname $!goods.advertWord">
+                                <a href="$!jshopProduct.getBookUrl($!goods.goodsId)" target="_blank">$!goods.wname</a>
+                                
+                            </div>                      
+                           <div class="jPrice">
+                               
+                                <div class="jdPrice">
+                                    <span class="jText">京东价：</span><span class="jRmb">￥</span>$!jshopPrice.getJdPrice($!goods.goodsId)
+                                    
+                                </div>
+                                <div class="jBtnArea">
+                                    <a href="$!jshopCommon.addCart($!goods.goodsId)" target="_blank">放入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                #end
+            </ul>
+            #end
+        </div>
+    </div>
+</div>
