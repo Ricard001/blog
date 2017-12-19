@@ -1,55 +1,138 @@
-<div class="j-module" module-function="tabAutoLayout" module-param="{}">
-    <div class="jTitle">
-      
-        <div class="jTitleSort">
-            <div class="jSortTabArrow"><b></b></div>
-            <div class="jSortTab">
-                #foreach($categoryRec in $categoryRecList) 
-                    <span>$!categoryRec.categoryName</span>
-                #end
-            </div>
-        </div>
-    </div>
-    <div class="jSortContent">
-        <div class="jSortContentArea">
-            #foreach($categoryRec in $categoryRecList)
-            <ul>
-                #foreach($goods in $categoryRec.goodsList)
-                <li>
-                    <div class="jItem">
-                        <div class="jPic">
-                            <a href="$!jshopProduct.getBookUrl($!goods.goodsId)" target="_blank">
-                                <img src="$!jshopCommon.getImage($!goods.imageurl,2)" alt="$!goods.wname" height="160" width="160" />
-                            </a>
-                            #if( $!goods.promTag!="")
-                            <div class="jPromotionLabel">
-                                <div class="jPromotionTextArea">
-                                    <span class="jPromotionNum">$!goods.promTag</span>
-                                </div>
-                            </div>
-                            #end
-                        </div>
-                        <div class="jGoodsInfo">
-                            <div class="jDesc" title="$!goods.wname $!goods.advertWord">
-                                <a href="$!jshopProduct.getBookUrl($!goods.goodsId)" target="_blank">$!goods.wname</a>
-                                
-                            </div>                      
-                           <div class="jPrice">
-                               
-                                <div class="jdPrice">
-                                    <span class="jText">京东价：</span><span class="jRmb">￥</span>$!jshopPrice.getJdPrice($!goods.goodsId)
-                                    
-                                </div>
-                                <div class="jBtnArea">
-                                    <a href="$!jshopCommon.addCart($!goods.goodsId)" target="_blank">放入购物车</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                #end
-            </ul>
-            #end
-        </div>
-    </div>
-</div>
+<!doctype html>
+</!DOCTYPE html>
+<html>
+<head>
+    <title>text</title>
+</head>
+<body>
+    <img src="http://img12.360buyimg.com/cms/jfs/t8239/339/2045246168/305199/aae132c5/59c33b0fNd25ccd73.jpg" border="0" usemap="#Map" title="改搞3_04.jpg" /> 
+<map name="Map">
+    <area shape="rect" coords="748,59,1099,290" href="//item.jd.com/14808549702.html" target="_blank" />
+  <area shape="rect" coords="1109,62,1459,287" href="//item.jd.com/4241211.html" target="_blank" />
+  <area shape="rect" coords="749,294,1097,514" href="//item.jd.com/405734.html" target="_blank" />
+  <area shape="rect" coords="1104,297,1458,519" href="//item.jd.com/1576987.html" target="_blank" />
+</map>
+<img src="http://img13.360buyimg.com/cms/jfs/t11614/86/438532372/300939/991764ca/59f00d48N6259306d.jpg" border="0" usemap="#Map10" title="改搞3_05.jpg" /> 
+<map name="Map10">
+    <area shape="rect" coords="481,52,1462,589" href="//item.jd.com/5382249.html" target="_blank" />
+</map>
+<img title="&amp;25913&amp;256303_06.jpg" src="http://img11.360buyimg.com/cms/jfs/t9793/365/3133927/60840/fceff5dc/59c33b0fNe87486ed.jpg" /> <img src="http://img10.360buyimg.com/cms/jfs/t10762/331/2138035331/276112/1cef75a6/59f0606dN7a96fd5e.jpg" border="0" usemap="#Map3" title="改搞3_07.jpg" /> 
+<map name="Map3">
+    <area shape="rect" coords="458,35,798,609" href="//item.jd.com/13640878270.html" target="_blank" />
+  <area shape="rect" coords="801,27,1479,335" href="//item.jd.com/3258290.html" target="_blank" />
+  <area shape="rect" coords="806,347,1129,602" href="//item.jd.com/2986698.html" target="_blank" />
+  <area shape="rect" coords="1137,344,1467,604" href="//item.jd.com/5319779.html" target="_blank" />
+</map>
+<img src="http://img14.360buyimg.com/cms/jfs/t7642/148/3227747219/262384/9d4dc52a/59f06059N0c03b703.jpg" name="yx" border="0" usemap="#Map4" id="yx" title="改搞3_08.jpg" /> 
+<map name="Map4">
+    <area shape="rect" coords="316,48,641,147" href="#yx" />
+  <area shape="rect" coords="651,44,834,144" href="#cy" />
+  <area shape="rect" coords="841,48,1019,142" href="#sjx" />
+  <area shape="rect" coords="1030,48,1210,141" href="#cdq" />
+  <area shape="rect" coords="1221,50,1397,141" href="#ghm" />
+  <area shape="rect" coords="1411,47,1596,142" href="#bht" />
+  <area shape="rect" coords="316,198,735,856" href="//item.jd.com/5382249.html" target="_blank" />
+  <area shape="rect" coords="741,535,1023,857" href="//item.jd.com/2986698.html" target="_blank" />
+  <area shape="rect" coords="1029,536,1305,857" href="//item.jd.com/1094922.html" target="_blank" />
+  <area shape="rect" coords="1314,535,1601,864" href="//item.jd.com/5319779.html" target="_blank" />
+<area shape="rect" coords="741,199,1021,528" href="//item.jd.com/2017690.html" target="_blank" />
+  <area shape="rect" coords="1030,200,1307,529" href="//item.jd.com/1031305.html" target="_blank" />
+  <area shape="rect" coords="1312,199,1592,525" href="//item.jd.com/405734.html" target="_blank" />
+</map>
+<img src="http://img13.360buyimg.com/cms/jfs/t10018/184/2112918773/231649/4aab2724/59f06055Ne1b55433.jpg" name="cy" border="0" usemap="#Map5" id="cy" title="改搞3_09.jpg" /> 
+<map name="Map5">
+    <area shape="rect" coords="313,21,501,118" href="#yx" />
+  <area shape="rect" coords="513,24,830,117" href="#cy" />
+  <area shape="rect" coords="845,24,1018,115" href="#sjx" />
+  <area shape="rect" coords="1028,23,1210,114" href="#cdq" />
+  <area shape="rect" coords="1219,25,1400,115" href="#ghm" />
+  <area shape="rect" coords="1407,20,1593,118" href="#bht" />
+  <area shape="rect" coords="319,167,737,831" href="//item.jd.com/4241211.html" target="_blank" />
+  <area shape="rect" coords="740,174,1022,502" href="//item.jd.com/4216468.html" target="_blank" />
+  <area shape="rect" coords="1026,175,1306,502" href="//item.jd.com/1577513.html" target="_blank" />
+  <area shape="rect" coords="1316,174,1589,501" href="//item.jd.com/1576987.html" target="_blank" />
+  <area shape="rect" coords="743,507,1019,830" href="//item.jd.com/13640878270.html" target="_blank" />
+  <area shape="rect" coords="1027,509,1304,829" href="//item.jd.com/5674448.html" target="_blank" />
+  <area shape="rect" coords="1311,508,1590,834" href="//item.jd.com/3928874.html" target="_blank" />
+</map>
+<img src="http://img12.360buyimg.com/cms/jfs/t10603/171/2449036023/246682/8d88b53/59f6e50bN66c07d42.jpg" name="sjx" border="0" usemap="#Map11" id="sjx" title="&amp;25913&amp;256303_10.jpg" /> 
+<map name="Map11">
+    <area shape="rect" coords="316,30,501,127" href="#yx" />
+  <area shape="rect" coords="508,34,688,124" href="#cy" />
+  <area shape="rect" coords="697,32,1025,140" href="#sjx" />
+  <area shape="rect" coords="1032,34,1209,124" href="#cdq" />
+  <area shape="rect" coords="1218,30,1401,130" href="#ghm" />
+  <area shape="rect" coords="1408,33,1605,136" href="#bht" />
+  <area shape="rect" coords="317,187,734,844" href="//item.jd.com/5088723.html" target="_blank" />
+  <area shape="rect" coords="741,180,1021,513" href="//item.jd.com/2963911.html" target="_blank" />
+  <area shape="rect" coords="1025,186,1307,513" href="//item.jd.com/1233197.html" target="_blank" />
+  <area shape="rect" coords="1312,183,1588,513" href="//item.jd.com/5088735.html" target="_blank" />
+  <area shape="rect" coords="742,517,1023,843" href="//item.jd.com/3489293.html" target="_blank" />
+  <area shape="rect" coords="1029,516,1304,842" href="//item.jd.com/1205858.html" target="_blank" />
+  <area shape="rect" coords="1316,522,1592,841" href="//item.jd.com/950141.html" target="_blank" />
+</map>
+<map name="Map6">
+    <area shape="rect" coords="319,34,499,127" href="#yx" />
+  <area shape="rect" coords="510,32,686,126" href="#cy" />
+  <area shape="rect" coords="702,33,1022,126" href="#sjx" />
+  <area shape="rect" coords="1028,30,1208,128" href="#cdq" />
+  <area shape="rect" coords="1223,32,1397,127" href="#ghm" />
+  <area shape="rect" coords="1407,34,1593,126" href="#bht" />
+  <area shape="rect" coords="319,184,735,844" href="//item.jd.com/5088723.html" target="_blank" />
+  <area shape="rect" coords="742,183,1019,512" href="//item.jd.com/2963911.html" target="_blank" />
+  <area shape="rect" coords="1026,183,1308,510" href="//item.jd.com/1233197.html" target="_blank" />
+  <area shape="rect" coords="1313,185,1589,512" href="//item.jd.com/5088735.html" target="_blank" />
+  <area shape="rect" coords="741,520,1020,841" href="//item.jd.com/3489293.html" target="_blank" />
+  <area shape="rect" coords="1025,519,1306,842" href="//item.jd.com/1205858.html" target="_blank" />
+  <area shape="rect" coords="1311,516,1604,838" href="//item.jd.com/950141.html" target="_blank" />
+</map>
+<img src="http://img10.360buyimg.com/cms/jfs/t9307/154/1888817980/298168/cb502c19/59c33b10Ndeec8889.jpg" name="cdq" border="0" usemap="#Map7" id="cdq" title="改搞3_11.jpg" /> 
+<map name="Map7">
+    <area shape="rect" coords="316,27,500,129" href="#yx" />
+  <area shape="rect" coords="504,26,689,123" href="#cy" />
+  <area shape="rect" coords="698,28,881,128" href="#sjx" />
+  <area shape="rect" coords="888,27,1209,126" href="#cdq" />
+  <area shape="rect" coords="1219,25,1398,127" href="#ghm" />
+  <area shape="rect" coords="1411,26,1592,126" href="#bht" />
+  <area shape="rect" coords="313,178,736,842" href="//item.jd.com/1237379.html" target="_blank" />
+  <area shape="rect" coords="742,177,1025,509" href="//item.jd.com/1595792.html" target="_blank" />
+  <area shape="rect" coords="1027,175,1308,508" href="//item.jd.com/2471228.html" target="_blank" />
+  <area shape="rect" coords="1311,176,1592,509" href="//item.jd.com/3153340.html" target="_blank" />
+  <area shape="rect" coords="742,515,1019,839" href="//item.jd.com/2831731.html" target="_blank" />
+  <area shape="rect" coords="1028,515,1305,834" href="//item.jd.com/2486284.html" target="_blank" />
+  <area shape="rect" coords="1310,515,1602,835" href="//item.jd.com/2831733.html" target="_blank" />
+</map>
+<img src="http://img11.360buyimg.com/cms/jfs/t13927/240/853471840/294057/6d5de185/5a15157fN6e5b9f4c.jpg" name="ghm" border="0" usemap="#Map8" id="ghm" title="改搞3_12.jpg" /> 
+<map name="Map8">
+    <area shape="rect" coords="315,35,502,131" href="#yx" />
+  <area shape="rect" coords="510,32,689,131" href="#cy" />
+  <area shape="rect" coords="700,34,880,129" href="#sjx" />
+  <area shape="rect" coords="888,31,1070,128" href="#cdq" />
+  <area shape="rect" coords="1081,38,1400,131" href="#ghm" />
+  <area shape="rect" coords="1407,31,1591,129" href="#bht" />
+  <area shape="rect" coords="327,182,733,849" href="//item.jd.com/3492151.html" target="_blank" />
+  <area shape="rect" coords="736,179,1023,514" href="//item.jd.com/5020057.html" target="_blank" />
+  <area shape="rect" coords="1027,188,1307,512" href="//item.jd.com/3922692.html" target="_blank" />
+  <area shape="rect" coords="1314,183,1595,513" href="//item.jd.com/1577541.html" target="_blank" />
+  <area shape="rect" coords="734,521,1023,839" href="//item.jd.com/5259266.html" target="_blank" />
+  <area shape="rect" coords="1028,516,1307,843" href="//item.jd.com/1693193.html" target="_blank" />
+  <area shape="rect" coords="1311,514,1595,846" href="//item.jd.com/4679603.html" target="_blank" />
+</map>
+<img src="http://img11.360buyimg.com/cms/jfs/t10585/9/3110283/305322/36b7d763/59c33b10N25072ddf.jpg" name="bht" border="0" usemap="#Map9" id="bht" title="改搞3_13.jpg" /> 
+<map name="Map9">
+    <area shape="rect" coords="317,24,497,117" href="#yx" />
+  <area shape="rect" coords="507,16,692,121" href="#cy" />
+  <area shape="rect" coords="702,17,883,120" href="#sjx" />
+  <area shape="rect" coords="887,17,1066,119" href="#cdq" />
+  <area shape="rect" coords="1080,23,1260,117" href="#ghm" />
+  <area shape="rect" coords="1274,26,1597,121" href="#bht" />
+  <area shape="rect" coords="317,173,734,832" href="//item.jd.com/4437397.html" target="_blank" />
+  <area shape="rect" coords="744,174,1022,500" href="//item.jd.com/4057644.html" target="_blank" />
+  <area shape="rect" coords="1025,173,1309,503" href="//item.jd.com/4305200.html" target="_blank" />
+  <area shape="rect" coords="1316,172,1593,499" href="//item.jd.com/4744768.html" target="_blank" />
+  <area shape="rect" coords="744,508,1021,831" href="//item.jd.com/1004804.html" target="_blank" />
+  <area shape="rect" coords="1027,509,1302,829" href="//item.jd.com/2754451.html" target="_blank" />
+  <area shape="rect" coords="1314,514,1600,835" href="//item.jd.com/3721776.html" target="_blank" />
+</map>
+</body>
+</html>
